@@ -29,6 +29,12 @@ public class camera_controls : MonoBehaviour
         newPosition = plr_position;
         newPosition.y += 1f;
         tr.position = newPosition;
+        
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.DrawRay(transform.position, transform.forward, Color.red, 10, true);
+            print("pressed: E");
+        }
     }
     void FixedUpdate()
     {
