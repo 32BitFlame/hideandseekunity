@@ -29,11 +29,14 @@ public class camera_controls : MonoBehaviour
         newPosition = plr_position;
         newPosition.y += 1f;
         tr.position = newPosition;
-        
+        RaycastHit interactObject;
         if(Input.GetKeyDown(KeyCode.E))
         {
-            Debug.DrawRay(transform.position, transform.forward, Color.red, 10, true);
-            print("pressed: E");
+            if(Physics.Raycast(transform.position, transform.forward, out interactObject, 9f, 9))
+            {
+                interactObject.transform.gameObject.SendMessage("Interact", transform.position, SendMessageOptions.RequireReceiver);
+                print("hit");
+            }
         }
     }
     void FixedUpdate()
