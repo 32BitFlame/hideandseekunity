@@ -21,4 +21,9 @@ public class InteractScript : MonoBehaviour
 {
     public bool locked;
     public toggle active;
+    private Vector3 Angle;
+    void FixedUpdate()
+    {
+        
+    }
 }
