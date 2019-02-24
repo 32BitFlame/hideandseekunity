@@ -1,7 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public class Weapon
+{
+    public float damage;
+    public float firerate;
+    public float accuracy;
+    public float range;
+    public Weapon(float Damage, float Firerate, float Accuracy, float range)
+    {
+        this.damage = Damage;
+        this.firerate = Firerate;
+        this.accuracy = Accuracy;
+        this.range = range;
+    }
+    public void fire(Vector3 currentPosition, Vector3 towards)
+    {
+        Vector3 target = towards.normalized * this.range;
+    }
+}
 public class plr_move : MonoBehaviour
 {
     [SerializeField]
@@ -23,12 +40,13 @@ public class plr_move : MonoBehaviour
     private Vector3 Vector_Z;
     private Vector3 TotalMove;
     private Quaternion newRotation;
-    
+    private bool isFiring;
     private camera_controls cameraScript;
     private Vector3 bellow;
     int jumps;
     void Start()
     {
+        isFiring = false;
         realSpd = spd;
         tr = GetComponent<Transform>();
         rotate = new Vector3(0f,0f,0f);
@@ -59,6 +77,10 @@ public class plr_move : MonoBehaviour
         {
             jumps = maximumj;
             
+        }
+        if(Input.GetMouseButton(0))
+        {
+
         }
     }
     void FixedUpdate()

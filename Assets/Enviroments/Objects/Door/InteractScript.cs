@@ -1,23 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+public class toggle
+{
+    public bool state = new bool();
+    public void Toggle()
+    {
+        if(state == false)
+        {
+            state = true;
+        }
+        else
+        {
+            state = false;
+        }
+    }
+
+}
 public class InteractScript : MonoBehaviour
 {
-    private Animator a;
-    void Start()
-    {
-        a = GetComponent<Animator>();
-    }
-    public void Interact(Vector3 position)
-    {
-            Vector3 relative = (position - transform.position).normalized;
-            if (Vector3.Dot(relative, transform.forward) > 0)
-            {
-                a.SetTrigger("OpeningFront");
-            }
-            else
-            {
-                //rotationDirection = -1;
-            }
-    }
+    public bool locked;
+    public toggle active;
 }
