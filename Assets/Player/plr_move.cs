@@ -44,8 +44,10 @@ public class plr_move : MonoBehaviour
     private camera_controls cameraScript;
     private Vector3 bellow;
     int jumps;
+    public bool interactPress;
     void Start()
     {
+        transform.tag = "player";
         isFiring = false;
         realSpd = spd;
         tr = GetComponent<Transform>();
@@ -59,6 +61,14 @@ public class plr_move : MonoBehaviour
     }
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            interactPress = true;
+        }
+        else
+        {
+            interactPress = false;
+        }
         bellow = new Vector3(transform.position.x, -50, transform.position.z);
         float xsp = Input.GetAxisRaw("Horizontal");
         float zsp = Input.GetAxisRaw("Vertical");
