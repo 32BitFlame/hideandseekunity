@@ -5,7 +5,7 @@ This project is in very early stages
 ## Documentation
 ### Weapon Class
 ```c#
-public Weapon(float Damage, float Firerate, float Accuracy, float range) {
+public Weapon weapon = new Weapon(float Damage, float Firerate, float Accuracy, float range) {
   ...
 }//No overflows
 ```
