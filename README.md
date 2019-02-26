@@ -5,7 +5,11 @@ This project is in very early stages
 ## Documentation
 ### Weapon Class
 ```c#
-public Weapon weapon = new Weapon(float Damage, float Firerate, float Accuracy, float range) {
-  ...
-}//No overflows
+public Weapon weapon = new Weapon(float Damage, float Firerate, float Accuracy, float range);
 ```
+|  Attr   |   Accounts for  | Required |
+|:-------:|:---------------------------------|:---:|
+|Damage   | Amount damage dealt to hit object|yes|
+|Firerate | Rate at which action occurs|yes|
+|Accuracy| Accuracy relative attached cameras "transform.forward"|yes|
+|Range| Range relative to players "transform.position"|yes|
