@@ -8,11 +8,11 @@ This project is in very early stages. I would not expect to see the game in play
 ---
 ## Documentation
 ### Weapon Class
-Syntax
+Syntax: :
 ```c#
 public Weapon weapon = new Weapon(float Damage, float Firerate, float Accuracy, float range);
 ```
-Attributes:: 
+Attributes: : 
 
 |  Attr   |   Accounts for  | Required |
 |:-------:|:---------------------------------|:---:|
@@ -21,6 +21,6 @@ Attributes::
 |Accuracy| Accuracy relative attached cameras "transform.forward"|yes|
 |Range| Range relative to players "transform.position"|yes|
 
-Methods::
+Methods: :
 
 > None at the moment though some are to come
