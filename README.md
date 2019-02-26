@@ -12,7 +12,8 @@ Syntax
 ```c#
 public Weapon weapon = new Weapon(float Damage, float Firerate, float Accuracy, float range);
 ```
-Attributes
+Attributes:: 
+
 |  Attr   |   Accounts for  | Required |
 |:-------:|:---------------------------------|:---:|
 |Damage   | Amount damage dealt to hit object|yes|
@@ -20,5 +21,6 @@ Attributes
 |Accuracy| Accuracy relative attached cameras "transform.forward"|yes|
 |Range| Range relative to players "transform.position"|yes|
 
-Methods
+Methods::
+
 > None at the moment though some are to come
