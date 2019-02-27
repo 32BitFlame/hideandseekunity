@@ -1,7 +1,5 @@
 # Hide and Seek in Unity
-The goal of this project is to emulate CSGO Hide and Seek and other various "Minigames" from from within the Unity Engine
-This project is in very early stages. I would not expect to see the game in playable state until the end of the year.
-> Thanks, Flame
+I will be there in a few minutes and I'll be there in the morning to see if I can get a ride to the airport on the 4th floor of the library and I will be there in a few minutes and I'll be there in the morning to see if I can
 ---
 ## Project Goals
 > For goals in relation to the project check the project tab on github
