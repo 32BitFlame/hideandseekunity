@@ -21,12 +21,3 @@ public Weapon weapon = new Weapon(float Damage, float Firerate, float Accuracy, 
 |Accuracy| Accuracy relative attached cameras "transform.forward"|yes|
 |Range| Range relative to players "transform.position"|yes|
 
-#### Methods: :
-Formated like
-
-|  Syntax |   Action  |
-|:-------:|:---------------------------------|
-|method()   |Does not exist|
-
-##### plr_move.cs: :
-> None here
