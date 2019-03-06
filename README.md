@@ -1,5 +1,5 @@
 # Hide and Seek in Unity
-I will be there in a few minutes and I'll be there in the morning to see if I can get a ride to the airport on the 4th floor of the library and I will be there in a few minutes and I'll be there in the morning to see if I can
+A simple hide and seek game developed in the Unity Engine
 ---
 ## Project Goals
 > For goals in relation to the project check the project tab on github
